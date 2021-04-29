@@ -1,0 +1,215 @@
+html
+    box-sizing: border-box
+    scroll-behavior: smooth
+
+*
+    box-sizing: inherit
+
+    &::before, &::after
+    box-sizing: inherit
+
+body
+    width: 100%
+    font-family: 'Roboto'
+    font-style: normal
+    font-size: 16px
+    ine-height: 26px
+    letter-spacing: 0.05em
+    font-weight: normal
+    color: #010101   
+
+/* ОБЩИЕ ЭЛЕМЕНТЫ */
+
+.container
+    max-width: 1000px
+    margin: 0 auto
+    padding: 0 calc(7px + (30 - 7) * ((100vw - 320px) / (1920 - 320))) 
+.text
+    color: #1F3F68
+    opacity: 0.6
+.btn
+    text-decoration: none
+    padding: 15px 0
+    color: #FFFFFF
+    letter-spacing: 0.04em
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    background: #5A98D0
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2)
+    border-radius: 10px
+
+/* ШАПКА */
+
+.header
+      &__nav-menu
+            padding: 0 calc(7px + (30 - 7) * ((100vw - 320px) / (1920 - 320)))
+            padding-top: 40px
+      &__nav-list
+            max-width: 1260px
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin: 0 auto
+      &__to-main-page
+            display: inline-block
+            width: 48px
+            height: 48px
+            background-image: url('/src/static/img/svg/logo.svg')
+            background-repeat: no-repeat
+            background-position: center
+      &__to-contacts-page
+            display: inline-block
+            width: 32px
+            height: 32px
+            background-image: url('/src/static/img/svg/humberger-menu.svg')
+            background-repeat: no-repeat
+            background-position: center
+
+/* СЕКЦИЯ TOP-INFO */
+.wrapper
+    max-width: 1366px
+    margin: 0px auto
+.top-background
+    width: 100%
+    height: 100%
+    background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%)
+
+.top-info
+    background-image: url('/src/static/img/png/background-img.png')
+    background-position: right 0
+    background-repeat: no-repeat
+    padding-bottom: 190px
+.top-info
+		&__container
+
+		&__title
+            padding-top: 101px
+            font-size: 64px
+            line-height: 74px
+            letter-spacing: 0.04em
+            color: #1F3F68
+            margin-bottom: 32px
+            max-width: 520px
+		&__text
+            max-width: 425px
+            margin-bottom: 71px
+		&__btn
+            width: 220px
+
+/* СЕКЦИЯ WHAT-WE-DO */
+
+.what-we-do
+    padding-top: 192px
+    padding-bottom: 212px
+
+.what-we-do
+		&__container
+            display: flex
+		&__left-content
+
+		&__title
+            max-width: 358px
+            font-size: 36px
+            line-height: 46px
+            color: #1F3F68
+            margin-bottom: 158px
+		&__card
+            padding: 48px
+            max-width: 380px
+            border-radius: 10px
+            box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2)
+            position: relative
+            &:nth-of-type(1) 
+                margin-left: 80px
+		&__right-content
+            margin-left: 100px
+            .what-we-do__card
+                &:nth-of-type(1) 
+                    margin-left: 0px
+                    margin-bottom: 100px
+
+.card
+		&__icon
+            margin: 0 auto
+            margin-bottom: 56px
+            display: block
+		&__title
+            font-size: 20px
+            line-height: 30px
+            color: #1F3F68
+            margin-bottom: 16px
+		&__text
+            margin-bottom: 32px 
+		&__btn
+            font-size: 14px
+            line-height: 30px
+            color: #5A98D0
+            text-decoration: none
+            display: inline-flex
+            align-items: center
+            &::after
+                content: ''
+                display: inline-block
+                width: 24px
+                height: 24px
+                margin-left: 24px
+                background-image: url('/src/static/img/svg/btn-arrow.svg')
+
+/* СЕКЦИЯ OUR-CLIENT */
+
+.our-client
+		&__background
+            background: #5A98D0
+            border-radius: 200px 0px 0px 0px
+		&__container
+            padding-top: 96px
+            padding-bottom: 125px
+		&__top
+            display: flex
+            margin-bottom: 111px
+		&__title
+            font-size: 36px
+            line-height: 46px
+            flex: 0 0 22.3%
+            color: #FFFFFF
+		&__text
+            line-height: 26px
+            flex: 0 0 54%
+            color: #FFFFFF
+            padding-left: 97px
+            width: 100%
+		&__table
+            display: inline-block
+		&__row
+            display: flex
+            border-bottom: 1px solid #FFFFFF
+            &:last-of-type
+                border-bottom: none
+.our-client
+		&__cell
+            padding: 46px
+            color: #FFFFFF
+            border-right: 1px solid #FFFFFF
+            &:last-of-type
+                border-right: none
+
+.our-client
+		&__cell
+			&_more
+                text-align: center
+                width: 235px
+                background: rgba(31, 63, 104, 0.2)
+
+
+
+
+
+
+
+
+
+
+
+
+

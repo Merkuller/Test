@@ -1,0 +1,493 @@
+html
+    box-sizing: border-box
+    scroll-behavior: smooth
+
+*
+    box-sizing: inherit
+
+    &::before, &::after
+    box-sizing: inherit
+
+body
+    width: 100%
+    font-family: 'Roboto'
+    font-style: normal
+    font-size: 16px
+    ine-height: 26px
+    letter-spacing: 0.05em
+    font-weight: normal
+    color: #010101   
+
+/* ОБЩИЕ ЭЛЕМЕНТЫ */
+
+.container
+    max-width: 1000px
+    margin: 0 auto
+    padding: 0 calc(7px + (30 - 7) * ((100vw - 320px) / (1920 - 320))) 
+.text
+    color: #1F3F68
+    opacity: 0.6
+.btn
+    text-decoration: none
+    padding: 15px 0
+    color: #FFFFFF
+    letter-spacing: 0.04em
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    background: #5A98D0
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2)
+    border-radius: 10px
+
+/* ШАПКА */
+
+.header
+      &__nav-menu
+            padding: 0 calc(7px + (30 - 7) * ((100vw - 320px) / (1920 - 320)))
+            padding-top: 40px
+      &__nav-list
+            max-width: 1260px
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin: 0 auto
+      &__to-main-page
+            display: inline-block
+            width: 48px
+            height: 48px
+            background-image: url('img/svg/logo.svg')
+            background-repeat: no-repeat
+            background-position: center
+      &__to-contacts-page
+            display: inline-block
+            width: 32px
+            height: 32px
+            background-image: url('img/svg/humberger-menu.svg')
+            background-repeat: no-repeat
+            background-position: center
+
+      /* ГЛАВНАЯ СТРАНИЦА */
+
+/* СЕКЦИЯ TOP-INFO */
+
+.wrapper
+    max-width: 1366px
+    margin: 0px auto
+.top-background
+    width: 100%
+    height: 100%
+    background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%)
+
+.top-info
+    background-image: url('img/png/background-img.png')
+    background-position: right 0
+    background-repeat: no-repeat
+    padding-bottom: 190px
+.top-info
+		&__container
+
+		&__title
+            padding-top: 101px
+            font-size: 64px
+            line-height: 74px
+            letter-spacing: 0.04em
+            color: #1F3F68
+            margin-bottom: 32px
+            max-width: 520px
+		&__text
+            max-width: 425px
+            margin-bottom: 71px
+		&__btn
+            width: 220px
+
+/* СЕКЦИЯ WHAT-WE-DO */
+
+.what-we-do
+    padding-top: 192px
+    padding-bottom: 212px
+
+.what-we-do
+		&__container
+            display: flex
+		&__left-content
+
+		&__title
+            max-width: 358px
+            font-size: 36px
+            line-height: 46px
+            color: #1F3F68
+            margin-bottom: 158px
+		&__card
+            padding: 48px
+            max-width: 380px
+            border-radius: 10px
+            box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2)
+            position: relative
+            &:nth-of-type(1) 
+                margin-left: 80px
+		&__right-content
+            margin-left: 100px
+            .what-we-do__card
+                &:nth-of-type(1) 
+                    margin-left: 0px
+                    margin-bottom: 100px
+
+.card
+		&__icon
+            margin: 0 auto
+            margin-bottom: 56px
+            display: block
+		&__title
+            font-size: 20px
+            line-height: 30px
+            color: #1F3F68
+            margin-bottom: 16px
+		&__text
+            margin-bottom: 32px 
+		&__btn
+            font-size: 14px
+            line-height: 30px
+            color: #5A98D0
+            text-decoration: none
+            display: inline-flex
+            align-items: center
+            &::after
+                content: ''
+                display: inline-block
+                width: 24px
+                height: 24px
+                margin-left: 24px
+                background-image: url('img/svg/btn-arrow.svg')
+
+/* СЕКЦИЯ OUR-CLIENT */
+
+.our-client
+		&__background
+            background: #5A98D0
+            border-radius: 200px 0px 0px 0px
+		&__container
+            padding-top: 96px
+            padding-bottom: 125px
+		&__top
+            display: flex
+            margin-bottom: 111px
+		&__title
+            font-size: 36px
+            line-height: 46px
+            flex: 0 0 22.3%
+            color: #FFFFFF
+		&__text
+            line-height: 26px
+            flex: 0 0 54%
+            color: #FFFFFF
+            padding-left: 97px
+            width: 100%
+		&__table
+            display: inline-block
+		&__row
+            display: flex
+            border-bottom: 1px solid #FFFFFF
+            &:last-of-type
+                border-bottom: none
+.our-client
+		&__cell
+            padding: 46px
+            color: #FFFFFF
+            border-right: 1px solid #FFFFFF
+            &:last-of-type
+                border-right: none
+
+.our-client
+		&__cell
+			&_more
+                text-align: center
+                width: 235px
+                background: rgba(31, 63, 104, 0.2)
+
+/* СЕКЦИЯ FEEDBACK */
+
+.feedback
+      &__background
+
+      &__background-image
+            max-width: 1270px
+            background: #316099
+            border-radius: 0px 200px 0px 0px
+      &__container
+            display: flex
+            align-items: center
+            padding-top: 91px
+            padding-bottom: 96px
+            margin-left: 183px
+      &__info
+            
+      &__title
+            font-size: 36px
+            line-height: 46px
+            color: #FFFFFF
+            margin-bottom: 32px
+            max-width: 317px
+      &__text
+            max-width: 460px
+            color: #FFFFFF
+            opacity: 0.6
+      &__btn
+            width: 220px
+            margin-left: 180px
+
+/* СЕКЦИЯ FOOTER */
+
+.footer
+      &__background
+            position: relative
+            &::before
+                  content: ''
+                  position: absolute
+                  display: inline-block
+                  top: 0
+                  left: 0
+                  height: 1px
+                  width: 78.55%
+                  background-color: #FFFFFF
+                  opacity: 0.4
+
+      &__background-image
+            max-width: 1270px
+            background: #316099
+      &__container
+            padding-top: 96px
+            padding-bottom: 64px
+            margin-left: 183px
+      &__nav
+            display: flex
+            
+      &__menu-afrianska
+            max-width: 299px
+            margin-right: 100px
+      &__afrianska-title
+            display: inline-flex
+            font-size: 28px
+            line-height: 46px
+            color: #FFFFFF
+            margin-bottom: 31px
+            align-items: center
+            &::before
+                  content: ''
+                  width: 48px
+                  height: 48px
+                  background-image: url('img/svg/afrianska-logo.svg')
+                  display: inline-block
+                  margin-right: 15px
+      &__afrianska-element
+            display: inline-flex
+            color: #FFFFFF
+            margin-bottom: 24px
+            &:nth-of-type(2)::before
+                  content: 'А.'
+                  width: 19px
+                  height: 26px
+                  display: inline-block
+                  color: #FFFFFF
+                  margin-right: 16px 
+            &:nth-of-type(3)::before
+                  content: 'Т.'
+                  width: 19px
+                  height: 26px
+                  display: inline-block
+                  color: #FFFFFF
+                  margin-right: 16px
+            &:nth-of-type(4)::before
+                  content: 'Е.'
+                  width: 19px
+                  height: 26px
+                  display: inline-block
+                  color: #FFFFFF
+                  margin-right: 16px
+      &__menu
+            max-width: 163px
+            margin-right: 77px
+            &:last-of-type
+                  margin-right: 0px
+      &__menu-title
+            font-size: 20px
+            line-height: 30px
+            color: #FFFFFF
+            margin-bottom: 32px
+      &__menu-element
+            color: #FFFFFF
+            margin-bottom: 16px
+            &:last-of-type
+                  margin-bottom: 0px
+      &__rights
+            padding-top: 64px
+            color: #FFFFFF
+            opacity: 0.4
+
+      /* СТРАНИЦА КОНТАКТЫ */
+
+.contact-us
+      margin-top: 40px
+      background-image: url('img/png/background-img-contacts.png')
+      margin-bottom: 57px
+.contact-us
+      &__container
+            padding-top: 51px
+            padding-bottom: 49px
+      &__title
+            text-align: center
+            font-size: 44px
+            line-height: 74px
+            color: #FFFFFF
+            width: 100%
+            margin-bottom: 16px
+      &__text
+            font-size: 20px
+            line-height: 30px
+            max-width: 780px
+            margin: 0 auto
+            color: #FFFFFF
+            opacity: 0.6
+            text-align: center
+.contacts
+      &__container
+            
+      &__info
+            display: flex
+            margin-bottom: 96px
+      &__feedback
+            padding-right: 89px
+      &__img
+            margin-top: 63px
+            margin-bottom: 71px
+      &__title
+            font-size: 20px
+            line-height: 30px
+            letter-spacing: 0.04em
+            color: #1F3F68
+      &__text
+            margin-top: 24px
+            max-width: 299px
+            margin-bottom: 40px
+            line-height: 26px
+      &__phone-number
+            margin-top: 24px
+            font-size: 16px
+            line-height: 26px
+            letter-spacing: 0.04em
+            color: #1F3F68
+            margin-bottom: 16px
+            display: inline-flex
+            align-items: center
+            &::before
+                  content: ''
+                  display: inline-block
+                  width: 24px
+                  height: 24px
+                  margin-right: 16px
+                  background-image: url('img/svg/phone-icon.svg')
+            &:nth-of-type(5)
+                  margin-top: 0px
+                  margin-bottom: 40px
+      &__web
+            margin-top: 24px
+            line-height: 26px
+            color: #1F3F68
+            display: inline-flex
+            align-items: center
+            text-decoration: none
+            &::before
+                  content: ''
+                  width: 24px
+                  height: 24px
+                  display: inline-block
+                  background-image: url('img/svg/web-icon.svg')
+                  margin-right: 16px
+      &__gmail
+            margin-top: 16px
+            line-height: 26px
+            color: #1F3F68
+            display: inline-flex
+            align-items: center
+            text-decoration: none
+            &::before
+                  content: ''
+                  width: 24px
+                  height: 24px
+                  display: inline-block
+                  background-image: url('img/svg/mail-icon.svg')
+                  margin-right: 16px
+      &__form
+            flex: 0 0 540px
+      &__form-body
+            box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2)
+            border-radius: 10px
+            padding: 56px
+      &__form-field
+            margin-bottom: 32px
+            &:first-of-type
+                  margin-top: 48px
+            label
+                  font-size: 16px
+                  line-height: 30px
+                  letter-spacing: 0.04em
+                  color: #1F3F68
+                  display: block
+                  margin-bottom: 8px
+                  opacity: 0.8
+            input
+                  width: 100%
+                  height: 72px
+                  border-radius: 10px
+                  border: 1px solid #356EAD
+                  opacity: 0.4
+                  padding-left: 42px
+                  &:focus
+                        outline: none
+      &__form-message
+            margin-bottom: 72px
+            label
+                  display: block
+                  font-size: 16px
+                  line-height: 30px
+                  margin-bottom: 8px
+                  color: #1F3F68
+                  opacity: 0.8
+            textarea
+                  width: 100%
+                  height: 144px
+                  border-radius: 10px
+                  border: 1px solid #356EAD
+                  opacity: 0.4
+                  padding-left: 36px
+                  padding-top: 21px
+                  &:focus
+                        outline: none
+      &__submit-btn
+            width: 100%
+            text-transform: uppercase
+            padding: 23px 0
+      &__map
+            margin-bottom: 96px
+
+.blue-background
+      background: #5A98D0
+.white-background
+      background: #FFFFFF
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
